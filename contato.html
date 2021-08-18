@@ -22,13 +22,13 @@
         <div>
             
             <form>
-                <label for="Nome">Nome</label> <br>
-                <input type="text" id='Nome'>
+                <label for="nome">Nome:</label> <br>
+                <input type="text" id='nome' onkeyup="validaNome()">
+                <div id='txtNome'></div>
                 <br>
-                <br>
-                <label for="Email">E-Mail: </label> <br>
-                <input type="email" id='email'>
-                <br>
+                <label for="email">Email: </label> <br>
+                <input type="email" id='email' onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
                 <br>
                 <label for="Assunto">Assunto: </label> <br>
                 <textarea name="Assunto" id="" cols="40" rows=""></textarea>
@@ -73,7 +73,11 @@
                   <p class="center">
                     Todos os direitos reservados: Camisa Dez &copy
                   </p>
-               </footer
+                </footer>
+
+                <script src="./assets/script.js"">
+
+                </script>
 </body>
 
 </html>
